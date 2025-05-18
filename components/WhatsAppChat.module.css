@@ -35,6 +35,12 @@
   font-size: 0.9rem;
   z-index: 600;
   transition: opacity 0.3s ease;
+  pointer-events: none; /* Prevents interaction when invisible */
+}
+
+.whatsapp-modal.visible {
+  opacity: 1;
+  pointer-events: auto; /* Re-enables interactions when visible */
 }
 
 .wm-head {

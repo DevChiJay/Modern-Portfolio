@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://devchihub.com/sitemap.xml
+Sitemap: https://devchi.me/sitemap.xml

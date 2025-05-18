@@ -27,7 +27,7 @@ const RecentProjects = () => {
       try {
         setIsLoading(true);
         const response = await axios.get(
-          "https://api.devchihub.com/humor/all"
+          "https://api.devchihub.com/portfolio/humor/all"
         );
         const quotes = response.data.humors;
         const quoteArray = Array.isArray(quotes) ? quotes : [quotes];
@@ -168,17 +168,12 @@ const RecentProjects = () => {
                     className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                     style={{ backgroundColor: "#13162D" }}
                   >
-                    <img
-                      src="/bg.png"
-                      alt="bgimg"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
                   <img
                     src={item.img}
                     alt={`${item.title} cover`}
-                    className="z-10 absolute bottom-0 object-contain max-w-full max-h-[90%]"
+                    className="z-10 w-full h-full object-cover"
                   />
+                  </div>
                 </div>
 
                 <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">

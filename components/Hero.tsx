@@ -43,7 +43,7 @@ const Hero = () => {
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Dynamic Web Magic with Next.js
+            Dynamic Web Magic
           </p>
 
           {/**
@@ -52,7 +52,7 @@ const Hero = () => {
            *  change md:text-6xl, add more responsive code
            */}
           <TextGenerateEffect
-            words="Your Cornerstone of Digital Transformation"
+            words="Your Home of Digital Transformation"
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
@@ -60,7 +60,7 @@ const Hero = () => {
             Hi! I am Chiemela James, a Software Developer based in Nigeria.
           </p>
 
-          <a href="#about">
+          <a href="#projects">
             <MagicButton
               title="Show my work"
               icon={<FaLocationArrow />}

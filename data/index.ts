@@ -15,20 +15,10 @@ export const gridItems = [
     id: 1,
     title: "Innovate & Integrate",
     description: "We aim to deliver cutting-edge solutions tailored to our clients' needs, encompassing software development, API integrations & creative design",
-    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
+    className: "lg:col-span-3 md:col-span-3 md:row-span-1",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
     img: "/b1.svg",
-    spareImg: "",
-  },
-  {
-    id: 2,
-    title: "I'm very flexible with time zone communications",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    imgClassName: "",
-    titleClassName: "justify-start",
-    img: "",
     spareImg: "",
   },
   {
@@ -42,20 +32,10 @@ export const gridItems = [
     spareImg: "",
   },
   {
-    id: 5,
-    title: "Currently building projects on Next.js 15",
-    description: "The Inside Scoop",
-    className: "md:col-span-3 md:row-span-2",
-    imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
-    titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "/b5.svg",
-    spareImg: "/grid.svg",
-  },
-  {
     id: 6,
     title: "Do you want to start a project together?",
     description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+    className: "lg:col-span-3 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-center md:max-w-full max-w-60 text-center",
     img: "",
@@ -66,11 +46,11 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "Next.js Modern Portfolio Website",
-    des: "A modern portfolio website built with Next.js, Tailwind CSS, TypeScript, and Three.js. It showcases my work and skills.",
-    img: "/portfolio.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://devchihub.com",
+    title: "API Management Portal",
+    des: "A web-based API management portal built with Next.js and Tailwind CSS.",
+    img: "/portal.png",
+    iconLists: ["/nodejs.svg", "/next.svg", "/tail.svg", "/ts.svg"],
+    link: "https://portal.devchihub.com/",
   },
   {
     id: 2,
@@ -79,6 +59,14 @@ export const projects = [
     img: "/awwards.png",
     iconLists: ["/re.svg", "/tail.svg", "/gsap.svg", "/fm.svg"],
     link: "https://zentry-awards.web.app/",
+  },
+  {
+    id: 3,
+    title: "Next.js Modern Portfolio Website",
+    des: "A modern portfolio website built with Next.js, Tailwind CSS, TypeScript, and Three.js. It showcases my work and skills.",
+    img: "/portfolio.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    link: "https://devchi.me",
   },
 ];
 
@@ -146,20 +134,13 @@ export const workExperience = [
   },
   {
     id: 2,
-    title: "Fullstack Dev Project",
-    desc: "Led the dev of a fullstack trading app for a client, using nodejs & express for the backend api.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
-  },
-  {
-    id: 3,
     title: "Mobile App Dev - JSM Tech",
     desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
   },
   {
-    id: 4,
+    id: 3,
     title: "Lead Developer",
     desc: "Developed and maintained user-facing features using modern frontend technologies.",
     className: "md:col-span-2",

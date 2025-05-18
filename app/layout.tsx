@@ -15,14 +15,14 @@ export const metadata: Metadata = {
   creator: "DevChi",
   publisher: "DevChi",
   applicationName: "DevChi Portfolio",
-  metadataBase: new URL("https://devchihub.com"),
+  metadataBase: new URL("https://devchi.me"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://devchihub.com",
+    url: "https://devchi.me",
     title: "DevChi's Portfolio",
     description: "Modern & Minimal Portfolio built with Next.js | Professional web developer showcasing projects and skills",
     siteName: "DevChi Portfolio",

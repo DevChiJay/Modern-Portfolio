@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   // Base URL - replace with your actual domain
-  const baseUrl = 'https://devchihub.com'
+  const baseUrl = 'https://devchi.me'
   
   // Get current date for lastModified
   const currentDate = new Date()

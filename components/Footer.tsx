@@ -7,17 +7,6 @@ import MagicButton from "./MagicButton";
 const Footer = () => {
   return (
     <footer className="w-full pb-10 mb-[100px] md:mb-5" id="contact">
-      {/* background grid */}
-      <div className="w-full absolute left-0 bottom-0 min-h-96">
-        <Image
-          width={1260}
-          height={463}
-          src="/footer-grid.svg"
-          alt="grid"
-          className="w-full h-full"
-        />
-      </div>
-
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
           Ready to take <span className="text-purple">your</span> digital
@@ -27,7 +16,7 @@ const Footer = () => {
           Reach out to me today and let&apos;s discuss how I can help you
           achieve your goals.
         </p>
-        <a href="mailto:support@devchihub.com">
+        <a href="mailto:support@devchi.me">
           <MagicButton
             title="Let's get in touch"
             icon={<FaLocationArrow />}

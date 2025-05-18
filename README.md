@@ -50,7 +50,7 @@ Welcome to my portfolio repository! This project showcases my skills, projects, 
 
 ## 🔗 Live Demo
 
-Check out the live version of my portfolio [here](https://devchihub.com)
+Check out the live version of my portfolio [here](https://devchi.me)
 
 ## 📝 License
 
