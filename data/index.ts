@@ -46,11 +46,11 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "API Management Portal",
-    des: "A web-based API management portal built with Next.js and Tailwind CSS.",
-    img: "/portal.png",
+    title: "Capp.to",
+    des: "The ultimate modern URL shortener with instant QR code generation!  Simplify your links and track clicks with ease.",
+    img: "/capp.png",
     iconLists: ["/nodejs.svg", "/next.svg", "/tail.svg", "/ts.svg"],
-    link: "https://portal.devchihub.com/",
+    link: "https://capp.to/",
   },
   {
     id: 2,
@@ -62,6 +62,14 @@ export const projects = [
   },
   {
     id: 3,
+    title: "API Management Portal",
+    des: "A web-based API management portal built with Next.js and Tailwind CSS.",
+    img: "/portal.png",
+    iconLists: ["/nodejs.svg", "/next.svg", "/tail.svg", "/ts.svg"],
+    link: "https://portal.devchihub.com/",
+  },
+  {
+    id: 4,
     title: "Next.js Modern Portfolio Website",
     des: "A modern portfolio website built with Next.js, Tailwind CSS, TypeScript, and Three.js. It showcases my work and skills.",
     img: "/portfolio.png",
