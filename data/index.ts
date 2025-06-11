@@ -46,6 +46,14 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
+    title: "Calculate.ng",
+    des: "Your comprehensive Nigerian calculator suite featuring BMI, Tax, and Inflation calculators. Simplifying complex calculations for everyday Nigerians.",
+    img: "/calculate.png",
+    iconLists: ["/re.svg", "/next.svg", "/tail.svg", "/ts.svg", "/fm.svg"],
+    link: "https://calculate.ng/",
+  },
+  {
+    id: 2,
     title: "Capp.to",
     des: "The ultimate modern URL shortener with instant QR code generation!  Simplify your links and track clicks with ease.",
     img: "/capp.png",
@@ -53,7 +61,7 @@ export const projects = [
     link: "https://capp.to/",
   },
   {
-    id: 2,
+    id: 3,
     title: "Zentry Animated Landing Page",
     des: "A landing page for Zentry, a web3 project, featuring GSAP animations and a modern design.",
     img: "/awwards.png",
@@ -61,7 +69,7 @@ export const projects = [
     link: "https://zentry-awards.web.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "API Management Portal",
     des: "A web-based API management portal built with Next.js and Tailwind CSS.",
     img: "/portal.png",
@@ -69,7 +77,7 @@ export const projects = [
     link: "https://portal.devchihub.com/",
   },
   {
-    id: 4,
+    id: 5,
     title: "Next.js Modern Portfolio Website",
     des: "A modern portfolio website built with Next.js, Tailwind CSS, TypeScript, and Three.js. It showcases my work and skills.",
     img: "/portfolio.png",

@@ -6,13 +6,11 @@ import { ThemeProvider } from "./provider";
 import ClientComponents from "@/components/ClientComponents";
 import dynamic from "next/dynamic";
 
-// Only import analytics in production
-const GoogleAnalytics = dynamic(() => 
-  process.env.NODE_ENV === "production" 
-    ? import("@/components/GoogleAnalytics").then(mod => mod.GoogleAnalytics)
-    : Promise.resolve(() => null)
+// Always import dynamically, but render only in production
+const GoogleAnalytics = dynamic(() =>
+  import("@/components/GoogleAnalytics").then(mod => mod.GoogleAnalytics),
+  { ssr: false }
 );
-
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -52,6 +50,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
+        {/* Only render in production */}
         {process.env.NODE_ENV === "production" && <GoogleAnalytics />}
         <ThemeProvider
           attribute="class"
