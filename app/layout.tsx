@@ -4,13 +4,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
 import ClientComponents from "@/components/ClientComponents";
-import dynamic from "next/dynamic";
-
-// Always import dynamically, but render only in production
-const GoogleAnalytics = dynamic(() =>
-  import("@/components/GoogleAnalytics").then(mod => mod.GoogleAnalytics),
-  { ssr: false }
-);
+import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 
 const inter = Inter({ subsets: ["latin"] });
 
