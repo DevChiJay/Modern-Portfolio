@@ -4,42 +4,33 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
 import ClientComponents from "@/components/ClientComponents";
+import dynamic from "next/dynamic";
+
+// Only import analytics in production
+const GoogleAnalytics = dynamic(() => 
+  process.env.NODE_ENV === "production" 
+    ? import("@/components/GoogleAnalytics").then(mod => mod.GoogleAnalytics)
+    : Promise.resolve(() => null)
+);
+
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "DevChi's Portfolio",
-  description: "Modern & Minimal Portfolio built with Next.js | Professional web developer showcasing projects and skills",
-  keywords: ["portfolio", "web developer", "frontend", "next.js", "react", "javascript"],
+  title: "DevChi Software Engineer | Portfolio",
+  description: "DevChi's Portfolio - A modern and minimal portfolio built with Next.js showcasing web development skills and projects.",
+  keywords: ["portfolio", "web developer", "frontend", "backend", "node.js", "next.js", "react", "javascript"],
   authors: [{ name: "DevChi" }],
   creator: "DevChi",
   publisher: "DevChi",
-  applicationName: "DevChi Portfolio",
   metadataBase: new URL("https://devchi.me"),
   alternates: {
     canonical: "/",
   },
-  openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: "https://devchi.me",
-    title: "DevChi's Portfolio",
-    description: "Modern & Minimal Portfolio built with Next.js | Professional web developer showcasing projects and skills",
-    siteName: "DevChi Portfolio",
-    images: [
-      {
-        url: "/og-image.png", // Add an Open Graph image (create this image in public folder)
-        width: 1200,
-        height: 630,
-        alt: "DevChi Portfolio",
-      },
-    ],
-  },
   twitter: {
     card: "summary_large_image",
     title: "DevChi's Portfolio",
-    description: "Modern & Minimal Portfolio built with Next.js | Professional web developer showcasing projects and skills",
-    images: ["/og-image.png"], // Use the same image as for Open Graph
+    description: "DevChi's Portfolio - A modern and minimal portfolio built with Next.js showcasing web development skills and projects.",// Use the same image as for Open Graph
   },
   robots: {
     index: true,
@@ -51,9 +42,6 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  verification: {
-    google: "your-google-verification-code", // Add your Google Search Console verification code
-  },
 };
 
 export default function RootLayout({
@@ -64,6 +52,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
+        {process.env.NODE_ENV === "production" && <GoogleAnalytics />}
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
